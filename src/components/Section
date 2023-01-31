@@ -1,0 +1,12 @@
+import data from "../data.json";
+
+const Section = (props) => {
+  console.log(props);
+  return (
+    <div className="bloc">
+      <p>{props.cateagory}</p>
+    </div>
+  );
+};
+
+export default Section;
