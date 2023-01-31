@@ -12,8 +12,13 @@ function App() {
               <div>
                 <h1>{list.category}</h1>
                 <div>
-                  {data.map((picture) => {
-                    return <div>{picture.images}</div>;
+                  {list.images.map((picture) => {
+                    console.log(picture);
+                    return (
+                      <div>
+                        <img src={picture} alt="images" />
+                      </div>
+                    );
                   })}
                 </div>
               </div>
