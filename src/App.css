@@ -1,3 +1,38 @@
+body {
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  margin-left: 50px;
+}
+
 h1 {
-  font-size: 35px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  color: azure;
+  padding-bottom: 15px;
+}
+
+header img {
+  /* border: 1px solid black; */
+  width: 100px;
+  padding-bottom: 30px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.pictures::-webkit-scrollbar {
+  display: none;
+}
+.pictures1 img {
+  background-color: #fff;
+  height: 130px;
 }
