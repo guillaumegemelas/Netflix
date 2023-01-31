@@ -1,10 +1,25 @@
 import data from "../data.json";
 
-const Section = (props) => {
-  console.log(props);
+const Section = () => {
   return (
-    <div className="bloc">
-      <p>{props.cateagory}</p>
+    <div>
+      {data.map((list) => {
+        return (
+          <div>
+            <h1>{list.category}</h1>
+            <div>
+              {list.images.map((picture) => {
+                console.log(picture);
+                return (
+                  <div>
+                    <img src={picture} alt="images" />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
