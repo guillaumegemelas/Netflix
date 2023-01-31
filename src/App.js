@@ -8,15 +8,18 @@ function App() {
       <main>
         <div>
           {data.map((list) => {
-            return <p>{list.category}</p>;
+            return (
+              <div>
+                <h1>{list.category}</h1>
+                <div>
+                  {data.map((picture) => {
+                    return <div>{picture.images}</div>;
+                  })}
+                </div>
+              </div>
+            );
           })}
           ;
-          {data.map((img) => {
-            return <img src="./data.json" alt="images des films" />;
-          })}
-          <div>
-            <img src="./data.json" alt="" />
-          </div>
         </div>
       </main>
 
