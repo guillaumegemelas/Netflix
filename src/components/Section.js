@@ -9,10 +9,10 @@ const Section = () => {
           <div key={index} className="category">
             <h1>{list.category}</h1>
             <div className="pictures">
-              {list.images.map((picture) => {
+              {list.images.map((picture, num) => {
                 console.log(picture);
                 return (
-                  <div className="pictures1">
+                  <div key={num} className="pictures1">
                     <img src={picture} alt="images" />
                   </div>
                 );
