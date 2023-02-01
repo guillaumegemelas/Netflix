@@ -1,6 +1,7 @@
 import "./App.css";
 import Section from "./components/Section";
 import logo from "../src/pictures/logo.png";
+import data from "./data.json";
 
 function App() {
   return (
@@ -11,7 +12,11 @@ function App() {
         </div>
       </header>
       <main>
-        <Section />
+        <div className="section">
+          {data.map((list, index) => {
+            return <Section key={index} list={list} />;
+          })}
+        </div>
       </main>
 
       <footer>PIED DE PAGE</footer>
