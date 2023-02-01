@@ -3,9 +3,10 @@ import data from "../data.json";
 const Section = () => {
   return (
     <div className="section">
-      {data.map((list) => {
+      {/* map pour éviter de saisir x fois la section */}
+      {data.map((list, index) => {
         return (
-          <div className="category">
+          <div key={index} className="category">
             <h1>{list.category}</h1>
             <div className="pictures">
               {list.images.map((picture) => {

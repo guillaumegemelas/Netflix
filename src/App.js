@@ -11,7 +11,7 @@ function App() {
         </div>
       </header>
       <main>
-        <Section></Section>
+        <Section />
       </main>
 
       <footer>PIED DE PAGE</footer>
